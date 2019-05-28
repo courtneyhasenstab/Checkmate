@@ -1,11 +1,18 @@
+
 h1{
-  color: red;
+  color: #8c0019;
+  font-family: 'Shadows Into Light', cursive;
 }
 body{
-  background-color: #508dba;
-
-
+  background-color: #white;
+  font-family: 'Shadows Into Light', cursive;
 }
 h4{
   color: black;
+  font-family: 'Shadows Into Light', cursive;
+}
+div{
+  background: #white;
+  border:black 2px solid;
+
 }
