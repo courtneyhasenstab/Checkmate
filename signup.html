@@ -2,37 +2,81 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>New User Signup</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </head>
   <body>
-    <link rel="stylesheet" href="login.css">
-    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet"
-    <div class="firstDiv">
-    <h1>Signup Now!</h1>
+    <div class="jumbotron">
+      <img src="checkmartk.png" alt=""
+      style="float:right;width:100px;height:100px;">
+      <form>
+      <h1>Welcom to CheckMate!</h1>
+      <p class="lead">
+      "Sign up Now to Join the fun!</p>
+
     </div>
-    <form action="/Users/courtney/Documents/Checkmate-master/welcome.html" method='get'>
-      <div class="secondDiv">
-      <table>
-        <tr>
-          <label for="Email">Email:</label>
-          <input id="Email" name="Email" name="useremail" placeholder="name@abc.com">
-          <br></br>
-          <label for="Username">Username:</label>
-          <input id="Username" type="username" name="username" placeholder="Username">
-          <br></br>
-          <label for="Userpass">Password:</label>
-          <input id="Userpass" type="password" name="userpass" placeholder="">
-          <br></br>
-          <label for="verify_password">Verify Password:</label>
-          <input id="verify_password" type="password" name="verify_password" placeholder="">
-          </div>
-          <br></br>
-          <input type="Submit" name="Submit" value="Submit">
-        </tr>
-      </table>
 
-    </form>
+<form>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationServer01">First name:</label>
+      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="" required>
+      <div class="valid-feedback">
+        Looks Good!
+      </div>
+      <div class="invalid-feedback">Try Again
 
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationServer02">Last name:</label>
+      <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="" required>
+      <div class="valid-feedback">
+        Looks Good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationServerUsername3"> Username:</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend3">@</span>
+        </div>
+        <input type="text" class="form-control is-valid" id="validationServerUsername3" placeholder="Username" aria-describedby="inputGroupPrepend3" required>
+        <id="ValidationServerUsername3">
+        <div class="valid-feedback">
+          Looks Good!
+        </div>
+      </div>
+    </div>
+  </div>
+  <form class="form-inline">
+  <div class="form-group">
+    <label for="inputPassword6">Password</label>
+    <input type="password" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+    <small id="passwordHelpInline" class="text-muted">
+      Must be 8-20 characters long.
+    </small>
+  </div>
+</form>
+    </div>
+
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck5" required>
+      <label class="form-check-label" for="invalidCheck5">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" href="welcome.html" type="submit">Submit form</button>
+</form>
   </body>
 </html>
